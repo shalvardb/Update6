@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <meta name="topic-comment" content="Inserting thumbnails"/>
+  <title>Thumbnails</title>
+  <link rel="stylesheet" type="text/css" href="../css/rh_2022_1.css"/>
+</head>
+<body>
+  <h4>Thumbnails</h4>
+  <p>If you select the Show Thumbnail for Images check box, two further fields will be shown.</p>
+  <p><img src="../images/multi_folder/thumbnails.png"/></p>
+  <h5>Create Thumbnails for Images</h5>
+  <p>A second smaller image is created in the output. Its size is determined by the settings in the topic and that is what the user will see when they open the topic. The page will load faster because the browser doesn’t have to download the bigger image on opening the topic. That is only downloaded when the user clicks the thumbnail.</p>
+  <h5>Style Existing Images as Thumbnails</h5>
+  <p>The full image is downloaded but its size is reduced to the settings applied in the topic. The user will see the full image when they click the thumbnail. The thumbnail image quality might be better because the original image itself is being used.</p>
+  <h5></h5>
+
+</body></html>

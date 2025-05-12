@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Multiple Columns</title>
+  <meta name="topic-status" content="Complete"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/rh_2022_1.css"/>
+  <meta name="rh-authors" content="Ann Author"/>
+  <meta name="rh-index-keywords" content="Columns"/>
+</head>
+<body>
+  <h1>Multiple Columns</h1>
+  <p>Multiple columns can be set up in three ways according to what is to be achieved.</p>
+  <h2>Required in All Instances of a Style Anywhere in the Project</h2>
+  <p>Either edit an existing style or create a new one such as p.columns and locate Multiple Columns in Properties. Set the required number of columns in the Column Count field and the other properties as required. As you type your content it will show in columns until you return to another style. You can apply the style to existing content.</p>
+  <p><img alt="" border="0" src="../assets/images/authoring/multiple_cols.png" style="border: none; cursor: nesw-resize;"/></p>
+  <h2>Required in All Instances of a Style in Specific Topics Only</h2>
+  <p>Place the cursor in some text with the style applied and go to Multiple Columns in Content Properties. Configure the columns there.</p>
+  <h2>All Content or Specific Sections containing Multiple Styles</h2>
+  <p>To achieve this you need to create a div tag. The opening tag is put at the beginning of the topic after the body tag or section and the closing tag is put at the end of the topic before the closing body tag or section.</p>
+  <p>Using the <span data-keyref="ProdName_Generic">Adobe RoboHelp</span> CSS editor create a Div tag with your preferred name, for example create a Div class named twocolumns.</p>
+  <ol class="Decimal">
+    <li>Open the CSS file in the CSS Editor and right click the Div Styles group, then click New Style</li>
+    <li>Set the class to &quot;twocolumns&quot; and define the column requirements in the Columns group.</li>
+    <li>Create a Div Container from the toolbar applying the class &quot;twocolumns&quot; and add your content or move existing content into it</li>
+  </ol>
+  <p> </p>
+
+</body></html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Non-Scrolling Area</title>
+  <meta name="topic-status" content="Complete"/>
+  <meta name="rh-authors" content="Ann Author"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/rh_2022_1.css"/>
+</head>
+<body>
+  <div style="height: 70pt;width: 100%;position: fixed;background-color: #FFFFFF;top: 160px;">
+    <h1>Top Non-Scrolling Area</h1>
+    <p>You can use DIV tags to make any area of your topic non-scrolling. This example shows how to set up a non-scrolling area. Note, that other content will appear below and above the non-scrolling area including if the area is at the top of page when authoring. In the output the content will scroll into the breadcrumbs area.</p>
+  </div>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <h2>Create the Area</h2>
+  <p>In this example we want the non-scrolling area to be at the top of the screen, accepting topic content will appear above it. Press Enter at the start of the topic heading and create a few blank lines with the P tag applied.</p>
+  <p><img src="../assets/images/miscellaneous/div_03.png"/></p>
+  <h2>Insert the Positioned Div</h2>
+  <p>Click first line in your topic and then click the Insert HTML Elements icon. Select Positioned Div.</p>
+  <p><img src="../assets/images/miscellaneous/div_01.png"/></p>
+  <p>Initially you will just see an area with dotted lines like this.</p>
+  <p><img src="../assets/images/miscellaneous/div_02.png"/></p>
+  <h2>Configure the Div Tag</h2>
+  <p>Click inside the defined area and then click the div breadcrumb.</p>
+  <h3>The Settings to Apply</h3>
+  <h4>Height and Width</h4>
+  <p>Set the height to your best estimate, you can change it later if necessary. It is suggested you use the same units as defined for the styles in your CSS.</p>
+  <p>In this example we want the area to be the full width. As that will vary for different users, it has been set to 100%.</p>
+  <h4>Position</h4>
+  <p>If you scroll the topic in author view you will see it just scrolls off the top, the same as any other content. Change the setting to Fixed and set Top to 0px while you are working in Author mode. When you generate you will need to adjust the Top setting to whatever positions it correctly. In this example, the setting needs to be 160px.</p>
+  <p>You will likely also need to add some blank lines below the divs.</p>
+  <p>If you now generate an output, its position will be fixed but you will see the content floating behind the div content. That will be fixed that in the next step.</p>
+  <h4>Background</h4>
+  <p>You must set a colour to stop the topic content being seen behind the div. Set the background of the div to be the same colour as the background of the content or your preferred colour.</p>
+  <p><img src="../assets/images/miscellaneous/div_05.png"/></p>
+  <h2>Note</h2>
+  <p>This is just a simple example. There are many more settings to allow you to configure the div tag to meet your requirements.</p>
+  <p>Just remember that to apply any setting, the first step is to click the DIV breadcrumb. It cannot be selected in any other way.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <div style="position:fixed;width:100%;height:140px;bottom:0px;background-color: #FFFFFF">
+    <h1>Bottom Non-Scrolling Area</h1>
+    <p>This is included out of academic interest. The easy solution in RoboHelp is to create a topic and define that as a statoc footer in the preset.</p>
+    <p>The steps are the same as the top non-scrolling area but this time leave the Top setting blank and define the Bottom setting as 0px. You can change that setting to move the div further up the page. It can be defined as a percentage to position the non-scrolling area in say the middle of the screen whatever the user&#39;s screen size and/or resolution.</p>
+  </div>
+
+</body></html>

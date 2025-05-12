@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+  <category name="default">
+    <snippet>../contents/assets/snippets/Generation.hts</snippet>
+    <snippet>../contents/assets/snippets/New_Outputs_New_Preset_Types.hts</snippet>
+    <snippet>../contents/assets/snippets/New_Outputs_Old_Types..hts</snippet>
+    <snippet>../contents/assets/snippets/Path.hts</snippet>
+    <snippet>../contents/assets/snippets/Publish.hts</snippet>
+    <snippet>../contents/assets/snippets/Thumbnails.hts</snippet>
+  </category>
+</categories>

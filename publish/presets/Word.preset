@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <content>
+    <conditional>
+      <name>NOT_Exclude</name>
+      <path>../expressions/NOT_Exclude.expn</path>
+    </conditional>
+    <toc>
+      <path>../../toc/Book_TOC.toc</path>
+      <name>Book_TOC</name>
+    </toc>
+    <index type="boolean">false</index>
+    <includereftopics type="boolean">true</includereftopics>
+    <includeExpandingText type="boolean">true</includeExpandingText>
+    <includeDropdownText type="boolean">true</includeDropdownText>
+  </content>
+  <title>About RoboHelp</title>
+  <metadata>
+    <author>Ann Author</author>
+    <subject>About RoboHelp</subject>
+  </metadata>
+  <metadataNew type="array">
+    <metadataNewitem>
+      <propkey>Author</propkey>
+      <propvalue>Ann Author</propvalue>
+    </metadataNewitem>
+    <metadataNewitem>
+      <propkey>Subject</propkey>
+      <propvalue>About RoboHelp</propvalue>
+    </metadataNewitem>
+    <metadataNewitem>
+      <propkey>Title</propkey>
+      <propvalue>About RoboHelp</propvalue>
+    </metadataNewitem>
+  </metadataNew>
+  <template>
+    <path>../templates/Word/word.tpl</path>
+    <name>word</name>
+  </template>
+  <type>word</type>
+  <outputPath></outputPath>
+  <name>Word</name>
+  <starterPage>About_RoboHelp.docx</starterPage>
+  <search>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+  </search>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <pdf>
+    <splitPdf type="boolean">false</splitPdf>
+  </pdf>
+  <word>
+    <stylemapping>{&quot;selectorMap&quot;:{},&quot;discardSelectors&quot;:[],&quot;identityMappedSelectors&quot;:[]}</stylemapping>
+    <insertTopicBreak type="boolean">true</insertTopicBreak>
+    <displayChapter type="boolean">true</displayChapter>
+  </word>
+  <excludeTopicCss type="boolean">true</excludeTopicCss>
+</preset>

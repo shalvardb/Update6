@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="topic-status" content="Complete" />
+  <meta name="generator" content="Adobe RoboHelp 2022" />
+  <title>Variables</title>
+  <meta name="rh-index-keywords" content="Variables" />
+  <meta name="rh-authors" content="Ann Author" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/rh_2022_1.css" />
+</head>
+<body>
+  <h1>Variables</h1>
+  <p>Variables allow you to enter a string that can be inserted in topics, topic titles, master pages, snippets, index entries and a table of contents. They are used where the string could change in the future.</p>
+  <p>Company and product names are good examples. Instead of having to edit every place the company or product name is used, you insert a variable. When the value of that variable changes, you change it once and it cascades to wherever you have used it.</p>
+  <p>Another scenario is where you need to change the string in different outputs. For example, you might sell the same product to different countries using a different name in some countries. The first step would be to create a variable called Product Name in which you set a default value being the name used in most countries. Then you could create sets for say Market 1 and Market 2. The Product Name would be duplicated in those two sets. In the Default Set you would enter the regular name and that would be copied to the Market 1 and Market 2 sets where you would change that to whatever is required.</p>
+  <p class="emphasis1"><img src="../assets/images/BadgeNew.png" /> Prior to Update 4, variables were created in the Authoring panel and sets were create in the Output panel. In Update 4, they have been brought together in the Authoring panel.</p>
+  <h2>Upgrading</h2>
+  <p>If your project is from any new UI version before <span data-keyref="ProdName_2022">Adobe RoboHelp 2022</span> Update 4, any existing variables will show along with any sets you have created. There is no change in how the feature works, it is simply a change to make set up and editing easier.</p>
+  <h2>Adding a Variable</h2>
+  <p>Select Variables in the left panel. You will see a blank screen if you have not previously created any variables, otherwise you will see them listed in alphabetical order.</p>
+  <p><img class="spacing_top_only" src="../assets/images/authoring/variables10.png" /></p>
+  <p>To add a variable, click the pencil edit icon to open the Variables editing panel</p>
+  <p>Enter the name of the new variable and its default value, then click the + icon. Ignore the dropdown and Settings for now. They will be covered in Variable Sets.</p>
+  <p><img class="spacing_top_and_bottom" src="../assets/images/authoring/variables11.png" /></p>
+  <p class="emphasis1"><img src="../assets/images/BadgeTip.png" /> If you will need lots of variables, consider adding a prefix to them so that they are grouped. For example, prefix any variable relating to the markets you operate in with MKT, any variables relating to the organisation you work for with ORG and so on.<br />
+    As the list of variables is alphabetical, this will keep them together.</p>
+  <h2>Editing a Variable</h2>
+  <ul class="disc">
+    <li>Double click the variable in the Variables panel.</li>
+    <li>If you are working on a topic containing the variable, right click in the variable and select Edit Variable from the context menu. You can also remove it using the context menu.</li>
+  </ul>
+  <h2 style="margin-top: -1px">Formatting Variables</h2>
+  <p>If you enter a simple string into the variable, it will take on the format of the paragraph it is in. In the Authoring panel, an unfomatted variable will show in green, as with any field. In the output, it will have the normal &lt;p&gt; tag applied unless you override it.</p>
+  <p><img alt="" border="0" class="spacing_top_only" src="../assets/images/authoring/variables03.png" /></p>
+  <p>In the above example there is a requirement for &quot;Warning&quot; to be in red in some instances. </p>
+  <p>If you want to format any or all of the variable, then apply styling as shown here.</p>
+  <p><img class="spacing_bottom_only" src="../assets/images/authoring/variables04.png" style="cursor: nesw-resize;" /></p>
+  <p class="emphasis1"><img alt="" border="0" src="../assets/images/BadgeTip.png" style="border: none;" /> &quot;Warning - Red&quot; has to be written as you see it above. If you are not sure what HTML is required for your variable, create it in a topic, switch to code view and copy/paste it from there.</p>
+  <p>In the output, the above examples will display as shown here.</p>
+  <p><img src="../assets/images/authoring/variables05.png" /></p>
+  <h2>Variable Sets</h2>
+  <p>Having created your variables with their default values, the next stage is to create the required sets</p>
+  <p>Let&#39;s say the default values are for US users and values are required for two more markets the organization operates in. Click the Settings icon to open this dialog and enter the required value, then click the + icon so that the set name appears below as shown.</p>
+  <p><img class="spacing_top_and_bottom" src="../assets/images/authoring/variables14.png" /></p>
+  <p>Click Done to close the dialog and then select a set in the dropdown. Initially that will show the default value. Change that to the required value. Change all the values for that set and then repeat the process for all the sets you require.</p>
+  <p>Later if you tick the check boxes, a Reset button allows you to revert any of the values to the default values so that you can start again.</p>
+  <p>The dustbin icon allows you to remove a whole set.</p>
+  <h2>Generating an Output</h2>
+  <p>When you generate an output you must select one set. You can either change the set each time you generate or create duplicate presets each with a different set selected.</p>
+  <h2>Excluding a Variable</h2>
+  <p>It may be that you need a variable in a topic but don&#39;t want it when certain sets are generated. To achieve this, exclude the variable and any adjacent text using a Condition Tag and Condition Expression.</p>
+  <p> </p>
+  <p> </p>
+</body>
+</html>

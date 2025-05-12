@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map type="booktoc">
+<title>topic_2</title>
+<page href="../contents/authoring/broken_links.htm" format="html" processing-role="normal"></page>
+</map>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="generator" content="Adobe RoboHelp 2022"/>
+  <title>Word Templates</title>
+  <meta name="topic-status" content="Complete"/>
+  <link rel="stylesheet" type="text/css" href="../assets/css/rh_2022_1.css"/>
+  <meta name="rh-authors" content="Ann Author"/>
+  <meta name="rh-index-keywords" content=""/>
+</head>
+<body>
+  <h1>Word Templates</h1>
+  <p><span data-keyref="ProdName_2022">Adobe RoboHelp 2022</span> introduces Word templates to make Word document production more controlled and to make it easy to get the same styling across documents in multiple projects on multiple machines.</p>
+  <p class="emphasis1"><img src="../assets/images/BadgeWarning.png"/> It is important not to confuse these templates created within <span data-keyref="ProdName_Generic">Adobe RoboHelp</span> with Word Templates created in Microsoft Word.</p>
+  <h2>How to Setup a Template</h2>
+  <p>The start point is to go to the Output Tab and create a Word Template by clicking the + icon or selecting one of the supplied templates.</p>
+  <p>With each of the groups expanded as above, you will see the available Page Layouts, Stylesheets and Resources. If the configuration options on the right are not already displayed, double click Settings to see to configure the template.</p>
+  <p><img class="spacing_top_and_bottom" src="../assets/images/outputs/word_templates03.png"/></p>
+  <p>With all the configuration options now shown, let&#39;s look at the various groups.</p>
+  <h2>Page Layouts</h2>
+  <p>Page layouts show both on the left and on the right as shown above. On the left are the layouts for editing, on the right the layouts are selected for the various parts of your Word document. In this section the supplied layouts are described.</p>
+  <p>You can edit the supplied page layouts or you can create your own.</p>
+  <h3>The Supplied Page Layouts</h3>
+  <p>This table describes the supplied template page layouts.</p>
+  <table border="1" cellpadding="1" cellspacing="1" class="blue" style="border-collapse:collapse; width:100%">
+    <colgroup>
+      <col style="width: 25%;"/>
+      <col style="width: 75%;"/>
+    </colgroup>
+    <tbody>
+      <tr>
+        <td style="background-color: #E5EAF9">
+          <p class="tableheading">Cover</p>
+        </td>
+        <td>
+          <p class="tabletext">The supplied page layout provides a sample cover for both the front and back pages. You can create your own if you require different covers. </p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #E5EAF9">
+          <p class="tableheading">General</p>
+        </td>
+        <td>
+          <p class="tabletext">If the same layout is required in multiple sections, a name such as &quot;General&quot; makes this easier.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #E5EAF9">
+          <p class="tableheading">TOC</p>
+        </td>
+        <td>
+          <p class="tabletext">If your Book TOC includes a TOC in Front Matter, the TOC layout includes the project name in the header.</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <p>With any page layout opened in the editor, it can be styled using the Content Properties.</p>
+  <h3>Cover and Back Page</h3>
+  <p>You can create your cover page using a page layout. By default each page layout has three divs applied to it, header, content and footer. In most cases these divs will give the required output for any layout including cover pages.</p>
+  <p>In a few scenarios a different configuration may be required. Try using Insert HTML Elements on the top toolbar and creating positioned divs instead of the default divs, they can be removed in Source View.</p>
+  <p>Positioned divs will appear top right by default. Go to Content Properties &gt; Layout to size and position the div as required.</p>
+  <p>In projects upgraded <span data-keyref="ProdName_2019">Adobe RoboHelp 2019</span> New UI or from <span data-keyref="ProdName_2020">Adobe RoboHelp 2020</span>, cover and back pages will be removed from the TOC and added to the template.</p>
+  <h3>Re-using the Supplied Page Layouts</h3>
+  <h4>In the Same Project</h4>
+  <p>From the menu for the page layout, select Show in Explorer. In Explorer copy the page layout to the required template.</p>
+  <h4>In another 2022 Project</h4>
+  <p>Page Layouts alone cannot be exported to another project as that would not take any resources or stylesheets required by that layout. Instead export the whole template and import it into the other project, then follow the steps above to copy the page layout between templates. To import the template, click the + icon to see the Import option.</p>
+  <h3>Creating Your Own Page Layouts</h3>
+  <p>Hover over the Page Layout heading and click the menu icon to add a new page layout.</p>
+  <p><img src="../assets/images/outputs/page_layout_new_word.png"/></p>
+  <p>You then edit it in the normal way.</p>
+  <h2>Styles</h2>
+  <p>The appearance of the Word document is controlled by the CSS files in the topics and the CSS files in the template. The easiest way to explain how the various options affect the appearance of the document is to first look at the Word option in the preset and what you define there.</p>
+  <h3>Rule 1</h3>
+  <ol class="RoundSquare">
+    <li>If you do not define a Word template here, then you will have two options when you click the dropdown, Use RoboHelp Style or Use Word Default. If you choose Use RoboHelp Style, what you see will depend on the CSS files used and whether or not you select the Exclude All The Topic CSS Files Not Selected in the Layout settings.
+      <ol>
+        <li>If you choose to exclude them, your choices in the dropdown will be to map to the RoboHelp styles or the Word default styles. The RoboHelp styles will be limited to those in the template CSS files. With more than one CSS file used in the template, cascading rules will apply based on <span>the order in the Stylesheet section.</span></li>
+        <li>If you choose not to exclude them, your choices in the dropdown will still be to map to the RoboHelp styles or the Word default styles but cascading will also include the topic CSS file(s). See Rule 2 for more information about how that works.</li>
+      </ol>
+    </li>
+    <li>If you do define a Word template here, it works exactly as above except the dropdown will include relevant styles to map to.</li>
+  </ol>
+  <p><img class="spacing_top_only" height="738" src="../assets/images/outputs/word_preset_07.png" width="714"/></p>
+  <h3>Rule 2</h3>
+  <p>To explain this, it will be assumed that in the Word settings above, you have set all the styles to map to Use RoboHelp Style. The appearance is then controlled by the order of the CSS files and whether or not the Exclude all the Topic CSS Files is selected.</p>
+  <ol class="RoundSquare">
+    <li>If it is selected, then the cascading effect will apply to the styles defined by the CSS files used in the template. How the cascading works here is if a style is in more than one CSS file, the style will be a merge of the definitions in each with any given declaration being that set in the last CSS file looked at. </li>
+    <li>If it is not selected, the cascading will include the topic CSS file(s).</li>
+  </ol>
+  <h3>Cascading</h3>
+  <p><img src="../assets/images/outputs/word_css1.png"/></p>
+  <p>In CSS above, Heading 1 has been set to be red but in another everything is the same except the colour has been set to black.</p>
+  <p>Dependent on which CSS is last in the order, the color will be red if this CSS is last or black if the other CSS file is last.</p>
+  <h3>The Order of the CSS Files</h3>
+  <h4>Template CSS Files</h4>
+  <p>The CSS files in the Stylesheets section of the template will be applied first based on the order of the CSS files in the page layout source code.</p>
+  <h4>Topic CSS Files</h4>
+  <p>Then the generation process will look at the Exclude All The Topic CSS Files setting.</p>
+  <ul class="Disc">
+    <li>If it is selected, then then only the CSS files in the Stylesheets section will apply as above.</li>
+    <li>If it is not selected, then the CSS file(s) used in the topics will be considered.
+      <ul>
+        <li>If the same CSS is used in all topics, that will be the last CSS in the cascading order so any definitons in the topic CSS file will override template CSS files.</li>
+        <li>If multiple CSS files are applied in topics, they will be cascaded in the order they are found based on the topics position in the TOC used. Effectively this creates one super CSS file and the definitions in this super topic CSS will override template CSS files.</li>
+      </ul>
+    </li>
+  </ul>
+  <h2 style="margin-top: -3px">Resources</h2>
+  <p>Shown here will be any assets that you use when creating the page layouts.</p>
+  <h2>Settings</h2>
+  <p>There are two parts to the Settings.</p>
+  <h3>General</h3>
+  <p><img class="spacing_bottom_only" src="../assets/images/outputs/word_templates04.png"/></p>
+  <table border="1" cellpadding="1" cellspacing="1" class="blue" style="border-collapse:collapse; width:100%">
+    <tbody>
+      <tr>
+        <td style="background-color: #E5EAF9;width: 25%">
+          <p class="tableheading">Start Each Topic From A New Page</p>
+        </td>
+        <td>
+          <p class="tabletext">Select if required.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #E5EAF9;width: 25%">
+          <p class="tableheading">Use Headings Up To Level</p>
+        </td>
+        <td>
+          <p class="tabletext">Set the level required.</p>
+        </td>
+      </tr>
+      <tr>
+        <td style="background-color: #E5EAF9;width: 25%">
+          <p class="tableheading">Readjust Heading Levels As Per The Source TOC Hierarchy</p>
+          <p class="tableheading"> </p>
+          <p class="tableheading">Add or replace heading from the source TOC to maintain the hierarchy</p>
+        </td>
+        <td>
+          <p class="tabletext">These settings combine to define the appearance of your TOC in the document. Shown below are examples using this TOC.</p>
+          <p class="emphasis1"><img src="../assets/images/BadgeNote.png"/> You will get different results if you attach a topic to a section. In some setting combinations the topic will not appear in the TOC. To overcome that attach the topic and insert it as an entry with other topics.</p>
+          <p><img class="spacing_top_only" src="../assets/images/outputs/templates07.png"/></p>
+          <h5>Neither Option Selected</h5>
+          <p>This will give just a straight list of the topics without the section names. The heading levels in the body will be the same as in Author view.</p>
+          <p><img src="../assets/images/outputs/templates08.png"/></p>
+          <h5>Readjust Selected - Add or Replace Not Selected</h5>
+          <p>This will also give just a straight list of the topics without the section names but with a difference. The heading levels in the TOC in the document will be one level down, note the different fonts. </p>
+          <p>In the document the heading levels will be one level lower than in Author view, H1 will become H2, H2 will become H3 and so on.</p>
+          <p>It is unlikely you would choose this combination but it is necessary to have the two options to make other requirements available.</p>
+          <p><img src="../assets/images/outputs/templates09.png"/></p>
+          <h5>Readjust Not Selected - Add or Replace Selected</h5>
+          <p>This has added the section names to the TOC at the same level as H1 in the topics. The heading levels in the body will be the same as in Author view.</p>
+          <p class="emphasis1"><img src="../assets/images/BadgeTip.png"/> This combination of settings will apply H1 to the section title and to the topic title. By using caps for the section title they are more obvious.</p>
+          <p><img src="../assets/images/outputs/templates10.png"/></p>
+          <h5>Both Selected</h5>
+          <p>With both options selected the details shown will be as above but the topics will be indented as shown below.</p>
+          <p>In the document the heading levels will be one level lower than in Author view, H1 will become H2, H2 will become H3 and so on.</p>
+          <p><img src="../assets/images/outputs/templates11.png"/></p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p> </p>
+  <h3>Page Layouts</h3>
+  <p>Here you select the page layouts you want applied to the various sections of your document.</p>
+  <p><img src="../assets/images/outputs/word_templates05.png"/></p>
+  <h4>Page Styles</h4>
+  <p>You can also type in a Page Style. That is intended for advanced users who may need to create a CSS style to achieve advanced results not possible with the supplied page layouts.The name of such styles can be typed in here. Make sure it is character and case perfect.</p>
+  <p>To create Page Styles, open your CSS in the CSS editor, click the Page Styles group and click the + icon to define the style.</p>
+  <p>Page Styles can also be applied to topics. See <a href="../user_interface/working_on_topics.htm">Working on Topics</a>.</p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+  <p> </p>
+
+</body></html>
